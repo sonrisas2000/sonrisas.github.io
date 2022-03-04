@@ -1,0 +1,148 @@
+
+body{
+    font-size: 62.5%;
+    
+}
+.grid{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:    "header header"
+                            "main main"
+                            "separator1 separator1"
+                            "section1 section1"
+                            "separator2 separator2"
+                            "section2 section2"
+                            "separator3 separator3"
+                            "section3 section3"
+                            "footer footer"
+                            ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:180px 500px 200px 1fr 200px 700px 200px 600px 300px;
+    
+
+}
+
+
+.header{
+    flex-direction: column;
+    text-align: center;
+}
+.header img{
+    margin-left:3rem ;
+}
+.nav ul{
+    justify-content: center;
+}
+/*Maquetacion seccion principal*/
+.main {
+    background-image:url(/src/img/paper\ plegat\ libros.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button{
+    border: none;
+    background-color:var(--color--blue);
+    color: white;
+    height: 45px;
+    width: 200px;
+    border-radius: 1rem;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+
+.separator__position{
+    text-align: center;
+    align-self: center;
+    font-weight: 100;
+}
+
+/*Grid cards*/
+.cards{
+    display: grid;
+    grid-template-columns:repeat(1,90%) ;
+    grid-template-rows:repeat(6,1fr) ;
+    grid-gap: 1.6rem;
+    justify-content: center;
+    padding: 1rem;
+}
+.card{
+    background-color:white ;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 2px rgba(82, 78, 78, 0.7);
+    display: flex;
+   
+}
+.card > div {
+    margin-left: 1rem;
+}
+
+
+/*Maquetando la segunda seccion*/
+.section2{
+    background-color: rgb(48, 48, 54);
+    color: white;
+    display: flex; 
+    flex-direction: column;
+    font-weight: 100;
+}
+.img__section2{
+    background-image: url(/src/img/Print-Picture.jpg);
+    height: 100%;
+    width: 100%;
+}
+.text__section2{
+    align-self: center;
+    margin-left: 1rem;
+    width: 58%;
+}
+/*Maquetacion de la tercera seccion*/
+
+.section3{
+    align-items: center;
+    background-image: url(/src/img/Print-Picture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.title{
+    color: rgb(248, 222, 222);
+    font-size:2rem ;
+}
+.img__section3{
+    background-image: url(/src/img/paper\ plegat\ libros.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat:no-repeat ;
+    height: 400px;
+    width: 400px;
+    
+}
+
+/*Maquetacion del footer*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.lista{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.lista li{
+    margin: 1rem;
+}
+.icon{
+    height: 32px;
+    width: 32px;
+}
