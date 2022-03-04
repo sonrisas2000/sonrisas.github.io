@@ -184,7 +184,7 @@ body {
 
 .work-section .work-card img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -328,7 +328,7 @@ body {
 
 .footer p {
     text-align: center;
-    color: #333333;
+    color: #a8a8a8;
     margin-bottom: 2rem;
 }
 
